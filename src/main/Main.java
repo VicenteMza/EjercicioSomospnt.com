@@ -35,14 +35,17 @@ public class Main {
     public static void main(String[] args) {
         List<Producto> product = new ArrayList<>();
         Productos prod = new Productos();
+        
         prod.cargarProducto(new Bebida(1.5, "Coca-Cola Zero", 20));
         prod.cargarProducto(new Bebida(1.5, "Coca-Cola", 18));
         prod.cargarProducto(new AseoPersonal(500, "Shampoo Sedal", 19));
-        prod.cargarProducto(new Fruta("kilo", "Frutillas", 64));
+        prod.cargarProducto(new Fruta("kilo", "Frutillas",64));
 
         prod.imprimirLista();
 
         product = prod.getProductos();
+        
+        //Ordeno la lista de productos
         Collections.sort(product);
         
         System.out.println("================================================");

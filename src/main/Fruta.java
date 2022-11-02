@@ -10,7 +10,7 @@ public class Fruta extends Producto{
 
     @Override
     public String toString() {
-        return "Nombre: " + super.getNombre() + " /// Precio: $" + super.getPrecio()+ " /// unidadDeVenta: " + unidadDeVenta;
+        return "Nombre: " + super.getNombre() + " /// Precio: $" + super.getPrecio()+ " /// Unidad De Venta: " + unidadDeVenta;
     }
     
     

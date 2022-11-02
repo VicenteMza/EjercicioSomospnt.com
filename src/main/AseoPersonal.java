@@ -10,7 +10,7 @@ public class AseoPersonal extends Producto{
 
     @Override
     public String toString() {
-        return "Nombre: " + super.getNombre() + " /// contenido: " + contenido + "ml"+ " /// Precio: $" + super.getPrecio();
+        return "Nombre: " + super.getNombre() + " /// Contenido: " + contenido + "ml"+ " /// Precio: $" + super.getPrecio();
     }
     
     

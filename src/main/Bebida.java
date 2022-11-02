@@ -10,7 +10,7 @@ public class Bebida extends Producto{
 
     @Override
     public String toString() {
-        return "Nombre: " + super.getNombre() + " /// litros: " + litros + " /// Precio: $" + super.getPrecio();
+        return "Nombre: " + super.getNombre() + " /// Litros: " + litros + " /// Precio: $" + super.getPrecio();
     }
     
     
