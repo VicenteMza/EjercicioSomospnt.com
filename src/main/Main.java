@@ -3,7 +3,6 @@ package main;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
 /*
 Ejercicio Somos PNT.
 
@@ -16,9 +15,9 @@ Nombre: Coca-Cola /// Litros: 1.5 /// Precio: $18
 Nombre: Shampoo Sedal /// Contenido: 500ml /// Precio: $19
 Nombre: Frutillas /// Precio: $64 /// Unidad de venta: kilo
 =============================
-Producto más caro: Frutillas
+Product más caro: Frutillas
 
-Producto más barato: Coca-Cola
+Product más barato: Coca-Cola
 
 La solución debe cumplir con los siguientes requisitos:
 
@@ -31,26 +30,25 @@ Para mostrar el mayor / menor, utilizar la interfaz Comparable.
 Para imprimir por pantalla, sobrescribir el método toString()
  */
 public class Main {
-
     public static void main(String[] args) {
-        List<Producto> product = new ArrayList<>();
-        Productos prod = new Productos();
+        List<Product> product = new ArrayList<>();
+        Products prod = new Products();
         
-        prod.cargarProducto(new Bebida(1.5, "Coca-Cola Zero", 20));
-        prod.cargarProducto(new Bebida(1.5, "Coca-Cola", 18));
-        prod.cargarProducto(new AseoPersonal(500, "Shampoo Sedal", 19));
-        prod.cargarProducto(new Fruta("kilo", "Frutillas",64));
+        prod.uploadProduct(new Drink(1.5, "Coca-Cola Zero", 20));
+        prod.uploadProduct(new Drink(1.5, "Coca-Cola", 18));
+        prod.uploadProduct(new PersonalCleanliness(500, "Shampoo Sedal", 19));
+        prod.uploadProduct(new Fruit("kilo", "Frutillas",64));
 
-        prod.imprimirLista();
+        prod.printList();
 
-        product = prod.getProductos();
+        product = prod.getProducts();
         
         //Ordeno la lista de productos
         Collections.sort(product);
         
-        System.out.println("================================================");
+        System.out.println("=============================");
 
-        prod.imprimirMax();
-        prod.imprimirMin();
+        prod.printMax();
+        prod.printMin();
     }
 }
